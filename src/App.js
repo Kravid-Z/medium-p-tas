@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import NavBar from "./components/NavBar/NavBar";
 import Home from "./pages/home/Home";
+import Login from "./pages/login/Login";
+import Register from "./pages/register/Register";
 import NewStory from "./pages/new-story/NewStory";
 import Topics from "./pages/topics/Topics";
 import Read from "./pages/read/Read"
@@ -12,6 +14,8 @@ import Stories from "./pages/stories"
 const routes = [
   { path: "/", component: Home },
   { path: "/new-story", component: NewStory },
+  { path: "/login", component: Login },
+  { path: "/register", component: Register },
   { path: "/topics", component: Topics },
   { path: "/read/:slug", component: Read },
   { path: "/search", component: Search },
